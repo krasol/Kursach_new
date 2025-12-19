@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/category_all"
+        android:title="Все категории"
+        android:icon="@android:drawable/ic_menu_view" />
+    <item
+        android:id="@+id/category_sport"
+        android:title="Спорт"
+        android:icon="@drawable/ic_sport" />
+    <item
+        android:id="@+id/category_music"
+        android:title="Музыка"
+        android:icon="@drawable/ic_music" />
+    <item
+        android:id="@+id/category_art"
+        android:title="Искусство"
+        android:icon="@drawable/ic_art" />
+    <item
+        android:id="@+id/category_dance"
+        android:title="Танцы"
+        android:icon="@drawable/ic_dance" />
+    <item
+        android:id="@+id/category_cooking"
+        android:title="Кулинария"
+        android:icon="@drawable/ic_cooking" />
+    <item
+        android:id="@+id/category_language"
+        android:title="Языки"
+        android:icon="@drawable/ic_language" />
+</menu>
+
+
+
+
+

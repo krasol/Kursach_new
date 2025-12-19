@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Colors -->
+    <color name="primary_color">#2563EB</color>
+    <color name="primary_dark">#1E40AF</color>
+    <color name="secondary_color">#3B82F6</color>
+    <color name="accent_color">#10B981</color>
+    
+    <!-- Background Colors -->
+    <color name="background_color">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="search_text_color">#1E293B</color>
+    
+    <!-- Category Colors -->
+    <color name="category_sport">#10B981</color>
+    <color name="category_music">#F59E0B</color>
+    <color name="category_art">#EF4444</color>
+    <color name="category_dance">#EC4899</color>
+    <color name="category_cooking">#F97316</color>
+    <color name="category_language">#3B82F6</color>
+    <color name="category_other">#2563EB</color>
+    
+    <!-- Other Colors -->
+    <color name="rating_color">#FBBF24</color>
+    <color name="rating_text_color">#F59E0B</color>
+    <color name="message_received_bg">#E2E8F0</color>
+    <color name="message_received_green">#DCF8C6</color>
+    <color name="message_received_text">#1E293B</color>
+    <color name="success_color">#D1FAE5</color>
+    <color name="error_color">#FEE2E2</color>
+    <color name="danger_icon_color">#EF4444</color>
+</resources>

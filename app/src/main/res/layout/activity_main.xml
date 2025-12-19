@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:title="HOBBY ALL"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@android:drawable/ic_menu_revert"
+            app:navigationIconTint="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="112dp">
+
+            <!-- Hero Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:strokeWidth="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_gradient" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="28dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Найди своего тренера"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Тысячи профессионалов готовы помочь"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:alpha="0.9"
+                            android:layout_marginBottom="16dp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxBackgroundColor="@android:color/white"
+                                app:boxCornerRadiusBottomEnd="12dp"
+                                app:boxCornerRadiusBottomStart="12dp"
+                                app:boxCornerRadiusTopEnd="12dp"
+                                app:boxCornerRadiusTopStart="12dp"
+                                app:boxStrokeColor="@android:color/white"
+                                app:startIconDrawable="@android:drawable/ic_menu_search"
+                                app:startIconTint="@android:color/white"
+                                app:hintEnabled="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/searchEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:imeOptions="actionSearch"
+                                    android:inputType="text"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:paddingTop="16dp"
+                                    android:paddingBottom="16dp"
+                                    android:textColor="@color/search_text_color"
+                                    android:textColorHint="@android:color/white"
+                                    android:textSize="14sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                            
+                            <TextView
+                                android:id="@+id/searchHintText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Поиск по хобби, имени тренера..."
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:layout_marginStart="48dp"
+                                android:layout_gravity="center_vertical"
+                                android:alpha="0.7"
+                                android:clickable="false"
+                                android:focusable="false" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Filter Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sortButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Сортировка"
+                    android:textSize="13sp"
+                    android:maxLines="1"
+                    android:ellipsize="none"
+                    app:icon="@drawable/ic_sort"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/categoryButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Категории"
+                    android:textSize="14sp"
+                    app:icon="@android:drawable/ic_menu_view"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                    
+            </LinearLayout>
+
+            <!-- Trainers List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trainersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_trainer" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/card_background"
+        android:elevation="8dp"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:itemActiveIndicatorStyle="@style/BottomNavigationActiveIndicator"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

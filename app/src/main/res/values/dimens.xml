@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_nav_height">96dp</dimen>
+    <dimen name="content_bottom_padding">16dp</dimen>
+    <dimen name="toolbar_logo_size">48dp</dimen>
+</resources>
+

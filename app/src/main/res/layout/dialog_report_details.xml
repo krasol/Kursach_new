@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="600dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тип:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/targetTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Анкета тренера"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/targetNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название цели"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Жалобщик:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reporterNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя жалобщика"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Причина:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/reasonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Причина жалобы"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Статус:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На рассмотрении"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата создания:"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/createdAtText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01.01.2024 12:00"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Просмотреть цель"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить анкету"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/error_color" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Забанить пользователя"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/error_color" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отклонить жалобу"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_notifications"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/badge_text"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/badge_background"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+</FrameLayout>
+

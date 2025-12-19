@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kursach</string>
+    <string name="terms_title">Условия использования</string>
+    <string name="privacy_title">Пользовательское соглашение</string>
+    <string name="registration_agreement_text">Я соглашаюсь с Условиями использования и Пользовательским соглашением</string>
+    <string name="agreement_error_text">Необходимо подтвердить согласие с условиями</string>
+    <string name="menu_terms">Условия использования</string>
+    <string name="menu_privacy">Пользовательское соглашение</string>
+    <string name="payment_success_title">Оплата выполнена</string>
+    <string name="payment_success_message">Оплата успешно проведена. Запрос на занятие отправлен тренеру.</string>
+    <string name="release_payment_success">Оплата передана тренеру</string>
+    <string name="release_payment_failed">Не удалось выполнить перевод</string>
+    <string name="insufficient_funds">Недостаточно средств на балансе</string>
+    <string name="user_gallery_photo">Фотография пользователя</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="profile_photos_title">Фотографии</string>
+    <string name="profile_photos_empty">Пока нет фотографий</string>
+    <string name="add_profile_photo">Добавить фотографию</string>
+</resources>

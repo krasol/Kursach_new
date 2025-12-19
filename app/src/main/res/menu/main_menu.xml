@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_create_profile"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Создать анкету"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_terms"
+        android:title="@string/menu_terms"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_privacy"
+        android:title="@string/menu_privacy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Настройки"
+        app:showAsAction="never" />
+</menu>
+
+

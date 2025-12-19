@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kursach" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <style name="Theme.Kursach" parent="Base.Theme.Kursach" />
+</resources>

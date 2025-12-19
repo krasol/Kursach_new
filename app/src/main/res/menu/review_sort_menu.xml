@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_newest"
+        android:title="Сначала новые" />
+    <item
+        android:id="@+id/sort_oldest"
+        android:title="Сначала старые" />
+    <item
+        android:id="@+id/sort_best"
+        android:title="Сначала лучшие" />
+    <item
+        android:id="@+id/sort_worst"
+        android:title="Сначала худшие" />
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+

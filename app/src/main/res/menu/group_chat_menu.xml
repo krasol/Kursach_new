@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_invite_member"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Пригласить участника"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_change_photo"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Изменить фото группы"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_edit_group_name"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Изменить название группы"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_leave_group"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Выйти из группы"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_delete_group"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Удалить группу"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_report_chat"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:title="Пожаловаться на чат"
+        app:showAsAction="never" />
+</menu>
+
+
+

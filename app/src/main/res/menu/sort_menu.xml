@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/sort_group">
+        <item
+            android:id="@+id/sort_default"
+            android:title="По умолчанию"
+            android:icon="@android:drawable/ic_menu_sort_by_size" />
+        <item
+            android:id="@+id/sort_price_asc"
+            android:title="Цена: по возрастанию"
+            android:icon="@drawable/ic_arrow_up" />
+        <item
+            android:id="@+id/sort_price_desc"
+            android:title="Цена: по убыванию"
+            android:icon="@drawable/ic_arrow_down" />
+        <item
+            android:id="@+id/sort_rating_desc"
+            android:title="Рейтинг: по убыванию"
+            android:icon="@drawable/ic_arrow_down" />
+        <item
+            android:id="@+id/sort_rating_asc"
+            android:title="Рейтинг: по возрастанию"
+            android:icon="@drawable/ic_arrow_up" />
+    </group>
+    <group android:id="@+id/gender_group">
+        <item
+            android:id="@+id/gender_male"
+            android:title="Мужчина"
+            android:icon="@drawable/ic_male" />
+        <item
+            android:id="@+id/gender_female"
+            android:title="Женщина"
+            android:icon="@drawable/ic_female" />
+    </group>
+</menu>
+
+
+
+
+
+
+
+

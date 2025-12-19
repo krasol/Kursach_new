@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/user_gallery_photo" />
+
+        <LinearLayout
+            android:id="@+id/photoPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradient"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_photo"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/removeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            app:fabCustomSize="32dp"
+            app:backgroundTint="@color/error_color"
+            app:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+

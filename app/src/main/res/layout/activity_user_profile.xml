@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".UserProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:title="Мой профиль"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/bottom_nav_height"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+                    <!-- Аватар -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="70dp"
+                        app:cardUseCompatPadding="false"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:strokeWidth="2dp"
+                        app:strokeColor="@color/text_secondary">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/profilePhotoImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Фото профиля" />
+
+                            <TextView
+                                android:id="@+id/profilePhotoPlaceholder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/card_gradient"
+                                android:gravity="center"
+                                android:text="👤"
+                                android:textSize="56sp" />
+
+                        </FrameLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Кнопка изменения фото -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnChangePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ИЗМЕНИТЬ ФОТО"
+                        android:textSize="14sp"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_marginBottom="32dp" />
+
+                    <!-- Личная информация -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Личная информация"
+                        android:textColor="@color/primary_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Имя -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Имя:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userFirstNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Олег"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Фамилия -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Фамилия:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userLastNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Перепелкин"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Email -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userEmailTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="email@example.com"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Тип аккаунта -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Тип аккаунта:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userTypeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Пользователь"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Баланс -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Баланс:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userBalanceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10500p"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Пол -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Пол:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userGenderTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Мужской"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Описание -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Описание:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/userDescriptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Нет описания"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:maxLines="3"
+                            android:ellipsize="end" />
+                    </LinearLayout>
+
+                    <!-- Фотографии -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Фотографии"
+                        android:textColor="@color/primary_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="16dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/galleryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:overScrollMode="never" />
+
+                    <TextView
+                        android:id="@+id/galleryEmptyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/profile_photos_empty"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddGalleryPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/add_profile_photo"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Редактировать профиль"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeetings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мои записи"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Баланс"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                app:icon="@android:drawable/ic_menu_manage"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Пожаловаться"
+                android:textSize="14sp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:icon="@drawable/ic_report_red"
+                app:iconTint="@color/danger_icon_color"
+                app:iconGravity="textStart"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выйти"
+                android:textSize="16sp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/card_background"
+        android:elevation="8dp"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:itemActiveIndicatorStyle="@style/BottomNavigationActiveIndicator"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

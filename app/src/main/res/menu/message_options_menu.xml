@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_edit_message"
+        android:title="Редактировать" />
+    <item
+        android:id="@+id/menu_delete_message"
+        android:title="Удалить" />
+    <item
+        android:id="@+id/menu_download_attachment"
+        android:title="Скачать"
+        android:icon="@drawable/ic_download" />
+</menu>
+
